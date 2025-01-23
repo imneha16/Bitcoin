@@ -1,4 +1,4 @@
-# Bitcoin Data Engineering and Analytics Project
+# Bitcoin Price Analytics Solution using Snowflake, Airflow, dbt, and Power BI
 
 This project involves building an end-to-end data pipeline for analyzing Bitcoin market data using CoinAPI and dbt. The pipeline ingests raw Bitcoin data, transforms it using dbt, and performs analytical tasks to extract insights from the data. The project uses Apache Airflow for orchestration and Docker for containerization.
 
