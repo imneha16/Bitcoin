@@ -1,0 +1,41 @@
+version: 2
+
+sources:
+  - name: BITCOIN_DATA_DB
+    schema: RAW_DATA
+    tables:
+      - name: bitcoin_prices
+        description: "Table containing raw Bitcoin price data"
+
+models:
+  - name: volume_analysis
+    description: "Model for analyzing volume trends in Bitcoin data"
+    columns:
+      - name: volume
+        description: "Traded volume of Bitcoin"
+        tests:
+          - not_null
+
+  - name: trend_analysis
+    description: "Model for analyzing price trends in Bitcoin data"
+    columns:
+      - name: trend
+        description: "Trend indicator (Uptrend, Downtrend, No Change)"
+        tests:
+          - not_null
+
+  - name: volatility_analysis
+    description: "Model for analyzing volatility in Bitcoin data"
+    columns:
+      - name: daily_range
+        description: "Daily price range (high - low)"
+        tests:
+          - not_null
+
+  - name: momentum_analysis
+    description: "Model for analyzing momentum and calculating RSI in Bitcoin data"
+    columns:
+      - name: rsi_14
+        description: "14-day RSI value"
+        tests:
+          - not_null

@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: bitcoin_data_db
+    database: BITCOIN_DATA_DB
+    schema: RAW_DATA
+    description: "Schema which stores raw Bitcoin price data"
+    tables:
+      - name: bitcoin_prices
+        identifier: BITCOIN_PRICES
+        description: "Table containing raw Bitcoin price data for analysis"
