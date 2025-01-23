@@ -77,6 +77,7 @@ You can monitor and manage the pipeline through the Airflow UI:
 - The default credentials are `admin` for both the username and password.
 
 - ## Folder Structure
+```
 │   ├── config/                     # Configuration files for the Airflow setup
 │   ├── dags/                       # Airflow Directed Acyclic Graphs (DAGs) to define tasks
 │   │   ├── BTC-DBT.py              # Airflow DAG for running dbt tasks
